@@ -11,24 +11,29 @@ const timer = document.querySelector('.timer');
 // Make an array of objects that stores question, choices of question and answer
 const quiz = [
     {
-        question: "Q. Which of the following is not a CSS box model property?",
-        choices: ["margin", "padding", "border-radius", "border-collapse"],
-        answer: "border-collapse"
+        question: "Q. During India's freedom struggle, Mahatma Gandhi led several movements. Which one of the following was NOT initiated by him?",
+        choices: ["Non-Cooperation Movement", "Quit India Movement", "Swadeshi Movement", "Simon Commission Protest"],
+        answer: "Simon Commission Protest"
     },
     {
-        question: "Q. Which of the following is not a valid way to declare a function in JavaScript?",
-        choices: ["function myFunction() {}", " let myFunction = function() {};", "myFunction: function() {}", "const myFunction = () => {};"],
-        answer: "myFunction: function() {}"
+        question: "Q. Gandhi's philosophy of nonviolent resistance, or 'Satyagraha,' emphasized the power of truth and love. Which event marked the beginning of his nonviolent resistance in India?",
+        choices: ["Dandi March", " Champaran Satyagraha", "Salt Satyagraha", "Quit India Movement"],
+        answer: "Champaran Satyagraha"
     },
     {
-        question: "Q. Which of the following is not a JavaScript data type?",
-        choices: ["string", "boolean", "object", "float"],
-        answer: "float"
+        question: "Q.Mahatma Gandhi launched various campaigns to promote self-reliance and self-sufficiency in India. Which one of these initiatives focused on boycotting British goods and promoting indigenous products?",
+        choices: ["Khilafat Movement", "Swaraj Movement", "Swadeshi Movement", "Civil Disobedience Movement"],
+        answer: "Swadeshi Movement"
     },
     {
-        question: "Q. What is the purpose of the this keyword in JavaScript?",
-        choices: ["It refers to the current function.", "It refers to the current object.", "It refers to the parent object.", " It is used for comments."],
-        answer: "It refers to the current object."
+        question: "Q. Gandhi's role in Indian politics extended beyond just the freedom struggle. Which political organization did he establish in 1920, which became the political voice of Indian Nationalism?",
+        choices: ["Indian National Congress", " All India Muslim League", "Rashtriya Swayamsevak Sangh", " Indian National Army"],
+        answer: "Indian National Congress"
+    },
+    {
+        question: "Q.Gandhi's fasting was often a tool for protest and moral persuasion. Which significant fast unto death did he undertake in 1932 to protest against the separate electorate system for Untouchables?",
+        choices: ["Bardoli Satyagraha", " Ahmedabad Mill Workers Strike", "Poona Pact Fast", "Kheda Satyagraha"],
+        answer: "Poona Pact Fast"
     }
 ];
 
