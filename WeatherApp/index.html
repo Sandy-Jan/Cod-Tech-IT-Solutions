@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather based on Location</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- whole weather details is going to be here -->
+    <div class="container">
+        <!-- upper portion for search box -->
+        <div class="header">
+            <!-- input and button are going to be here -->
+            <div class="search-box">
+                <input type="text" placeholder="choose your location" class="input-box" id="input-box">
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+            </div>
+        </div>
 
+        <div class="location-not-found">
+            <h1>Sorry!! Location not found</h1>
+            <img src="imagesWeather/404.png" alt="404 Error">
+        </div>
+
+        <!-- all the details will be inside in this -->
+        <div class="weather-body">
+            <!-- place for the default image -->
+            <img src="/imagesWeather/cloud.png" alt="weather" class="weather-img" id="weather-img">
+                <!-- a box in which the details of temperature is going to be there -->
+            <div class="weather-box">
+                <p class="temperature  id="temperature">0 <sup>°C</sup> </p>
+                <p class="description"  id="description">Light Rain</p>
+            </div>
+
+            <!-- details of weather is going to be there -->
+            <div class="weather-details">
+                <!-- creating humidity as one of the weather phenomena -->
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <!-- creating humidity as one of the weather phenomena -->
+                <div class="wind">
+                    <i class="fa-sharp fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">14km/H</span>
+                        <p>Wind-speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d377b32292.js" crossorigin="anonymous"></script>
+</body>
+</html>
